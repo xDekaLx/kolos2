@@ -4,7 +4,7 @@ int main()
     int n, positive = 0;
     do
     {
-        printf("Ведіть кільскість: ");
+        printf("Введіть значення: ");
         scanf("%i", &n); 
     }
     while ( n < 1 || n > 100);
