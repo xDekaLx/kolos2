@@ -1,15 +1,13 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <cs50.h>
 #include <string.h>
-
-int main(void)
+int main ()
 {
-    char *s = "Hello, World!";
-    int length = strlen(s);
-    char *t;
-    for (int i = 0; i < length; i++)
+    string s = get_string();
+    for(int i = strlen(s); i > 0; i--)
     {
-        t[i] = s[length - i];
+        printf("%c", s[i]);
     }
-    printf("%s\n", t);
     return 0;
 }
